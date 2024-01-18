@@ -12,18 +12,18 @@ class Post(models.Model):
        The post is sorted from newest to the oldest post. The title will be displayed on the Post
        table.
        
-        :param AutoField id: auto generates ids for post objects
-        :param CharField title: creates a charfield, max length is 300, and each title must be unique
-        :param CharField slug: creates a charfield, max length is 300, and each title must be unique
-        :param ForeignKey[User] author: retrieves the username from the User table, the post get deleted
-                                        when the user is deleted
-        :param TextField content: creates a charfield allowing the user to add content to the post
-        :param IntegerField status: creates a dropdown where the user selects the status of the post,
-                                    either 0 - draft or 1 - published
-        :param DateTimeField created_at: datetimefield will be used to get the date the post was created, 
-                                         the dates can either use the current date or another date
-        :param DateTimeField updated_at: datetimefield will be used to get the date the post was created, 
-                                         the dates can either use the current date or another date
+        :param id: auto generates ids for post objects
+        :param title: creates a charfield, max length is 300, and each title must be unique
+        :param slug: creates a charfield, max length is 300, and each title must be unique
+        :param author: retrieves the username from the User table, the post get deleted
+                       when the user is deleted
+        :param content: creates a charfield allowing the user to add content to the post
+        :param status: creates a dropdown where the user selects the status of the post,
+                       either 0 - draft or 1 - published
+        :param created_at: datetimefield will be used to get the date the post was created, 
+                            the dates can either use the current date or another date
+        :param updated_at: datetimefield will be used to get the date the post was created, 
+                            the dates can either use the current date or another date
        """
     # Unique id given to each post.
     id = models.AutoField(primary_key=True)
