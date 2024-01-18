@@ -12,6 +12,16 @@ from .models import Post
 """
 # =====================
 class PostAdmin(admin.ModelAdmin):
+    """Displays the title, slug, and status of the post in a list on the Admin site.
+       The post can be filtered by their status and can be searched for by their title
+       or content.
+
+        :param tuple list_display: A tuple that displays the title, slug, and status of 
+                                  the post
+        :param tuple list_filter: Tuple filters the post by status
+        :param tuple search_fields: Tuple used to search fields by title and content
+       """
+    
     list_display = (
         "title",
         "slug",
