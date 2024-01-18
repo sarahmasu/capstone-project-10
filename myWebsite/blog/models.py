@@ -8,6 +8,23 @@ STATUS = ((0, "Draft"), (1, "Publish"))
 
 # This class creates a table called Post
 class Post(models.Model):
+    """Creates a table called Post in database. The input captured will be saved in the database. 
+       The post is sorted from newest to the oldest post. The title will be displayed on the Post
+       table.
+       
+        :param AutoField id: auto generates ids for post objects
+        :param CharField title: creates a charfield, max length is 300, and each title must be unique
+        :param CharField slug: creates a charfield, max length is 300, and each title must be unique
+        :param ForeignKey[User] author: retrieves the username from the User table, the post get deleted
+                                        when the user is deleted
+        :param TextField content: creates a charfield allowing the user to add content to the post
+        :param IntegerField status: creates a dropdown where the user selects the status of the post,
+                                    either 0 - draft or 1 - published
+        :param DateTimeField created_at: datetimefield will be used to get the date the post was created, 
+                                         the dates can either use the current date or another date
+        :param DateTimeField updated_at: datetimefield will be used to get the date the post was created, 
+                                         the dates can either use the current date or another date
+       """
     # Unique id given to each post.
     id = models.AutoField(primary_key=True)
 
@@ -29,10 +46,19 @@ class Post(models.Model):
 
     # This class orders the post created from the newest to oldest.
     class Meta:
+        """Sorts the post object from the newest to the oldest posts.
+        
+            :param list ordering: a list of ordered post object
+        """
         ordering = ["-created_at"]
 
     # Returns tbe title in a readable form
     def __str__(self):
+        """Returns the title in a readable form.
+
+            :return: the title is returned in a readable form
+            :rtype: str
+        """
         return self.title
 
 """
