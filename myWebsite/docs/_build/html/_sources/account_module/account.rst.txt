@@ -7,7 +7,7 @@ Submodules
 account.forms module
 --------------------
 
-.. automodule:: forms
+.. automodule:: account.forms
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ account.forms module
 account.views module
 --------------------
 
-.. automodule:: views
+.. automodule:: account.views
    :members:
    :undoc-members:
    :show-inheritance:
