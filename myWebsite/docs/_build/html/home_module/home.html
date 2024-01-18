@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview: module code &mdash; Website 00.00.01 documentation</title>
+  <title>home module &mdash; Website 00.00.01 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -19,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="library" href="../library_module/modules.html" />
+    <link rel="prev" title="home" href="modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,10 +45,20 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../account_module/modules.html">account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../blog_module/modules.html">blog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../home_module/modules.html">home</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">home</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">home module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-home.views">home.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#home.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../library_module/modules.html">library</a></li>
 </ul>
 
@@ -63,8 +76,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Overview: module code</li>
+          <li class="breadcrumb-item"><a href="modules.html">home</a></li>
+      <li class="breadcrumb-item active">home module</li>
       <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/home_module/home.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -72,19 +87,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>All modules for which code is available</h1>
-<ul><li><a href="account/forms.html">account.forms</a></li>
-<li><a href="account/views.html">account.views</a></li>
-<li><a href="blog/admin.html">blog.admin</a></li>
-<li><a href="blog/models.html">blog.models</a></li>
-<li><a href="blog/views.html">blog.views</a></li>
-<li><a href="home/views.html">home.views</a></li>
-<li><a href="library/views.html">library.views</a></li>
-</ul>
+  <section id="home-module">
+<h1>home module<a class="headerlink" href="#home-module" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-home.views">
+<span id="home-views-module"></span><h2>home.views module<a class="headerlink" href="#module-home.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="home.views.index">
+<span class="sig-prename descclassname"><span class="pre">home.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/home/views.html#index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#home.views.index" title="Link to this definition"></a></dt>
+<dd><p>Renders the view onto the home webpage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpResponse</em>) – Used to process the HttpResponse request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Renders the view onto the home.html page</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../library_module/modules.html" class="btn btn-neutral float-right" title="library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
