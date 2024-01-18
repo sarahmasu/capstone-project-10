@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 mb-4 mt-3 left top">
+            <div class="card-body">
+                <h1 style="color: #DDA35D;">{% block title %}  {{ object.title }} {% endblock title %}</h1>
+                <p> {{ post.author }} | {{ post.created_at }} </p>
+                <p class="card-text ">{{ object.content | safe }}</p>
+                <a class="btn" style=" background-color: #3c3a1e; color: #e3deca;" href="{% url 'blog' %}">&larr; Back </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

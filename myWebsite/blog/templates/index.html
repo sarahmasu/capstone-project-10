@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+
+<div class="container">
+
+    {% for post in post_list %}
+    <div class="row">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title" style="color: #DDA35D;">{{ post.title }}</h2>
+                <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_at }} </p>
+                <p class="card-text"> {{ post.content|slice:":200" }} </p>
+                <a href="{% url 'post_detail' post.slug %}" class="btn"
+                    style="background-color: #3c3a1e; color: #e3deca;"> Read more &rarr;</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

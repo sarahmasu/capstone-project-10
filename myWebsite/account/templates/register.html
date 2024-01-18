@@ -1,0 +1,70 @@
+{% extends 'signup.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<!-- 
+        Explanation of this section:
+        _____________________________
+            - The information within the form tag will be posted to the database.
+            - The csrf_token (Cross-Site Request Forgery) prevents unwanted actions on the
+              website.
+            - form.as_p renders the fields for the sign up page for the user to enter 
+              the required input - such as their first name, username, and password. 
+              It also renders images.
+            - Once the user enters all the required information, they click on the 'Sign Up' buttom
+              and the information is then sent (POST) to the database.
+            - If the user already has an account they can click on the 'Sign In' link to log into
+              their account.
+        ____________________________
+        End of Explanation
+
+    -->
+
+<!-- The form is stored in a card -->
+
+<br><br>
+<div class="card">
+
+    <div class="card-body">
+
+        <!--The card title-->
+        <h4 class="card-title text-center">Sign Up</h4>
+
+        <!-- The information in the card is split over two columns:
+                - The first column displays the form
+                - The second column displays the logo of the website.
+        -->
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <div class="mb-3 mt-3">
+                {{ form|crispy }}
+            </div>
+
+
+            <button type="submit" class="btn" style="background-color: #DDA35D; color: white;">Sign
+                Up</button>
+
+            <br><br>
+
+            <small class="text-muted">
+                <!--Links to the login page-->
+                Already have an account? <a href="{% url 'login' %}" style="color: #DDA35D;">Sign In</a>
+            </small>
+        </form>
+
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+<!--
+    Reference:
+        - Fixed the issue with the text not appearing underneath each other.
+          Source: https://pylessons.com/user-registration
+
+-->
