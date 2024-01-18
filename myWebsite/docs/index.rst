@@ -11,6 +11,9 @@ Welcome to Website's documentation!
    :caption: Contents:
 
    account_module/modules
+   blog_module/modules
+   home_module/modules
+   library_module/modules
 
 Indices and tables
 ==================
