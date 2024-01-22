@@ -75,6 +75,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myWebsite.wsgi.application'
 
+ALLOWED_HOSTS = [
+    'myWebsite.on.dockerize.io',
+    'ip172-18-0-77-cmn4qks7vdo000e8nau0-8000.direct.labs.play-with-docker.com'
+]
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
