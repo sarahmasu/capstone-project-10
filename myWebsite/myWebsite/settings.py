@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-&nv5!8ln7mdxww45a2r+z4#t!udsl*6*sz$%b(3wfh7b8_j6%0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Allows all ip address
+# Source: https://stackoverflow.com/questions/24857158/commanderror-you-must-set-settings-allowed-hosts-if-debug-is-false
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,11 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myWebsite.wsgi.application'
 
-ALLOWED_HOSTS = [
-    'myWebsite.on.dockerize.io',
-    'ip172-18-0-77-cmn4qks7vdo000e8nau0-8000.direct.labs.play-with-docker.com'
-]
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -120,7 +117,6 @@ TIME_ZONE = 'Africa/Johannesburg'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

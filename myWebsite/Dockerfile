@@ -1,14 +1,17 @@
-FROM python:latest
+FROM python:3
 
-WORKDIR /capstone-project-10
+WORKDIR /myWebsite
 
-COPY requirements.txt requirements.txt
-
-RUN pip install -r requirements.txt
-
-COPY . /capstone-project-10
+ADD . /myWebsite/
 
 EXPOSE 8000
 
-ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
+COPY requirements.txt /myWebsite
+
+RUN pip3 install -r requirements.txt --no-cache-dir
+
+COPY . /myWebsite
+
+ENTRYPOINT ["python3"]
+
+CMD ["manage.py", "runserver", "0.0.0.0:8000"]
