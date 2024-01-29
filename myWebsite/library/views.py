@@ -14,6 +14,14 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='login')
 def view_library(request):
+    """Renders the view on the library.html page. The user will not able 
+       to access the webpage unless the they have an account. They will initially 
+       be redirected to the login page.
+       
+        :param request: Used to process HttpResponse request
+        :return: Renders the view on the library.html page
+        :rtype: HttpResponse
+       """
     return render(request,'library.html')
 
 # Reference:
