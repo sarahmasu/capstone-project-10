@@ -60,7 +60,7 @@ The Catalogue is a dropdown link, the navigation items do not link to another we
 ### 2.1. How to run the project on your local device <a name = "local"></a>
 In order to run the project, you will need to create a django enviroment. First you need to create a virual enviroment, on your device, to run the project. Then install the packages, listed in the requirements.txt file, to ensure that the project runs.
 
-Once you have installed all the neccessary packages and created a virual enviroment, migrate the database. Run the project then enter http://127.0.0.1:8000/home/ to redirect you to the home page of the website. You need to have access to the secret key, you will find it in a text file on dropbox.
+Once you have installed all the neccessary packages and created a virual enviroment, migrate the database. Run the project then enter http://127.0.0.1:8000/home/ to redirect you to the home page of the website. You need to have access to the secret key, you will find it in a capstone.txt file on Dropbox.
 
 To access Library do the following:
 
@@ -80,7 +80,7 @@ If you have already have an account do the following:
 If you try to click on Library you will be redirected to the Log in page, if you don't have an account click on Sign Up Now to create a user account.
 
 ### 2.2. How to run the project using Docker <a name = "docker"></a>
-The project has been dockerized, so you won't need to create a virtual enviroment to run the django project. First, you will need a docker account, and you might need to install docker. Next pull the docker repo to run the program. Enter http://127.0.0.1:8000/home/ into the browser to see if it works.
+The project has been dockerized, so you won't need to create a virtual enviroment to run the django project. First, you will need a docker account, and you might need to install docker. Next pull the docker repo to run the program. Enter http://127.0.0.1:8000/home/ into the browser to see if it works. The link to the docker repo can be found in the capstone10.txt file in Dropbox.
 
 ## 3. What Changes can be made to Imporve the Website <a name="changes"></a>
 Things I could add to improve the website:
