@@ -29,31 +29,31 @@ There are two ways to run the project, you can create a virutal enviroment on yo
 The project was based on an another task about a store, in this case a bookstore, to add items on their online webpage of the products that are on sale. The project went through a number of changes before this project. The website consists of a home page, a blog, a library, a login and a sign up page. The user can navigate to these pages using the navigation bar provided at the top.
 
 If you look on the navigation bar of the website, you will see links to other webpages:
-    * Home (current page)
-    * Blog
-    * Library
-    * Log in
-    * Sign up
+* Home (current page)
+* Blog
+* Library
+* Log in
+* Sign up
 
 The home page is the current page that you are on. 
 
-![Home page]() <br>
+![Home page](https://github.com/Icyfire315/capstone-project-10/blob/main/myWebsite/assets/homepage.PNG) <br>
 
 The Blog consists of post, posted by the admin, about changes, new addtions, and removals of any book or features on the website.
 
-![Blog page]() <br>
+![Blog page](https://github.com/Icyfire315/capstone-project-10/blob/main/myWebsite/assets/blogpage.PNG) <br>
 
 The Library is where current and new books will be made available to user who have created accounts.
 
-![Library page]() <br>
+![Library page](https://github.com/Icyfire315/capstone-project-10/blob/main/myWebsite/assets/librarypage.PNG) <br>
 
 The Sign in page is where the user creates an user account. The Log in page is where users, who have created accounts, log into their accounts.
 
-![Signup page]() <br>
+![Signup page](https://github.com/Icyfire315/capstone-project-10/blob/main/myWebsite/assets/sign_up_page.PNG) <br>
 
 The Log in page is where users, who have created accounts, log into their accounts.
 
-![Login page]() <br>
+![Login page](https://github.com/Icyfire315/capstone-project-10/blob/main/myWebsite/assets/login_page.PNG) <br>
 
 The Catalogue is a dropdown link, the navigation items do not link to another webpages. The only pages available for you to access is Home, Blog, Sign up, and Log in.
 
@@ -110,4 +110,10 @@ This website has gone through so many changes, some of these changes have improv
 
 * Perales, S., 2021. how to restrict pages in Django? if "@login required(login_url='login')" does not work. [Online] Available at: https://stackoverflow.com/questions/69099712/how-to-restrict-pages-in-django-if-login-requiredlogin-url-login-does-no [Accessed 30 December 2023].
 
-* 
+* Dindi, S., 2022. How to Dockerize a Django App. [Online] Available at: https://www.makeuseof.com/dockerize-django-app/ [Accessed 26 January 2024].
+  
+* Ahtisham, 2019. How to set Django allowed_hosts?. [Online] 
+Available at: https://stackoverflow.com/questions/54504142/how-to-set-django-allowed-hosts
+[Accessed 24 January 2024].
+
+
