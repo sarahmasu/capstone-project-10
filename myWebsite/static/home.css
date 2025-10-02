@@ -1,0 +1,38 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    background-color: #DDA35D;
+    color: #E3DECA;
+}
+
+.topnav a.active {
+    background-color: white;
+}
+
+.brand-text {
+    color: #3C3A1E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    padding: 50px;
+    color: #DDA35D;
+}
+
+.footer {
+    background-color: #DDA35D;
+    color: #E3DECA;
+}
+
+a {
+    color: #DDA35D;
+}
+
+.fakeimg {
+    height: 200px;
+    background: #DDA35D;
+  }
