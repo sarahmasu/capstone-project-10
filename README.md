@@ -116,4 +116,8 @@ This website has gone through so many changes, some of these changes have improv
 Available at: https://stackoverflow.com/questions/54504142/how-to-set-django-allowed-hosts
 [Accessed 24 January 2024].
 
+* Builder, T., 2025. Django Tip: Why Your Static Files Disappear When DEBUG = False. [Online] 
+Available at: https://dev.to/iamthebuilder/django-tip-why-your-static-files-disappear-when-debug-false-4p4k
+[Accessed 2 October 2025].
+
 
